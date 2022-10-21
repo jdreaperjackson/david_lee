@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="mail_form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
+    <!-- document title -->
+    <title>Jepret - Modern Photographer</title>
+</head>
+
+<body>
+    <!-- MAIN WRAPPER START
+            ============================================= -->
+    <div class="main-wrapper clearfix">
+        <!-- HEADER START
+                ============================================= -->
+                <header id="header">
+                    <div class="header-style1-wrap">
+                        <div class="header-content-left">
+                            <!-- LOGO START
+                                ============================================= -->
+                            <div class="logo">
+                                <h2 class="logo-title">
+                                    <a href="index.html">True Reflections Media</a>
+                                </h2>
+                            </div>
+                            <!-- LOGO END -->
+                        </div>
+                        <div class="header-content-right">
+                            <!-- NAVIGATION START
+                                ============================================= -->
+                            <nav class="main-nav col-span-9  sm:col-span-12">
+                                <!-- Mobile menu toggle button -->
+                                <button class="jepret-menu-mobile">
+                                    <i class="icon icon-reorder"></i>
+                                </button>
+                                <!-- Sample menu definition -->
+                                <ul id="main-menu" class="sm sm-clean mobile-menu">
+        
+                                    <li class="menu-item ">
+                                        <a href="index.html">Home</a>
+                                    </li>
+        
+                                    <li class="menu-item has-submenu">
+                                        <a href="#">About</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item-sub"><a href="about-us.html">About Us</a></li>
+                                            <li class="menu-item-sub"><a href="photography-studio.html">Photography Studio</a></li>
+                                            <li class="menu-item-sub"><a href="file:///C:/Users/kenny/source/repos/main-jepret-html/jepret-doc/READ_ME.html"> DISCLOSURES</a></li>
+                                        </ul>
+                                    </li>
+        
+                                    <li class="menu-item has-submenu">
+                                        <a href="#">Services</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item-sub"><a href="price&service1.html">REAL ESTATE PHOTOGRAPHY PRICING</a></li>
+                                            <li class="menu-item-sub"><a href="price&service2.html">PHOTO ENHANCEMENT OPTIONS</a></li>
+                                            <li class="menu-item-sub"><a href="services1.html">Services 1</a></li>
+                                            <li class="menu-item-sub"><a href="services2.html">Services 2</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="menu-item ">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="menu-item ">
+                                        <a href="album-grid.html">Albums</a>
+                                    </li>
+                                    <li class="menu-item ">
+                                        <a href="blog.html">ART</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- NAVIGATION END -->
+                        </div>
+                    </div>
+                </header>
+        <!-- HEADER END -->
+        <!-- Content -->
+        <div class="content">
+            <div class="top-bar"></div>
+            <div class="left-bar"></div>
+            <div class="right-bar"></div>
+
+            <div class="contact-block contact-block-2 clearfix">
+                <div class="column column-3 title-wrap">
+                    <h1 class="the-title">
+                        In Case You Need Photos
+                    </h1>
+                    <span class="divider-separator"></span>
+                    <br>
+
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCy_ugmMQjPcwdsibWWv05Fw"  target="popup" 
+                    onclick="window.open('https://www.youtube.com/channel/UCy_ugmMQjPcwdsibWWv05Fw','popup'); return false;"class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+
+                </div>
+                <div class="column column-40 contact-img-wrap">
+                    <img src="img/image-contact.png"  alt="contact-img" class="contact-img">
+                </div>
+                <div class="column column-3 detail-wrap">
+                    <div class="contact-detail">
+                        <h3 class="the-title">Contact Detail</h3>
+                        <p>
+                            P: (832) 645-5529
+                            <br>
+                            E: michelgroch@support.com
+                        </p>
+                    </div>
+                    <div class="address-detail">
+                        <form  action="php/mail.php" method="post"  id="cf" >
+                            <input class="feedback-input" type="text" id="name" name="name" placeholder="Full Name..." required>
+                            <input class="feedback-input" type="tel" id=phone name="phone" placeholder="Phone...">
+                            <input class="feedback-input" type="email" id="email" name="email" placeholder="Email..." required>
+                            <textarea class="feedback-input" rows="2" placeholder="Message..." id="msg" name="msg" required></textarea>
+                            <button  type="submit" id="submit" name="submit">Submit</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end Content -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright">
+                <p class="copyright-text">JEPRET THEME BY THEMES AWESOME</p>
+            </div>
+        </footer>
+        <!-- end Footer -->
+    </div>
+
+    <!-- Footer Scripts
+            ============================================= -->
+    <!-- JavaScripts
+        ============================================= -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.smartmenus.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
