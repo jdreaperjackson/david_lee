@@ -3303,7 +3303,7 @@ p.copyright-text {
   align-items: center;
   justify-content: center;
   width: 250px;
-  height: auto;
+  height: 490px;
   background-color: #f9f9f9;
   border-radius: 20px;
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
@@ -3317,13 +3317,14 @@ p.copyright-text {
 }
 
 .card-header {
+  font-size: 1.2rem;
   margin: 1rem;
   text-align: center;
 }
 
 .card-wrapper:hover .card-header> h2{
   transform: scale(1.1);
-  color: #5222d0;
+  color: #b20b24;
   letter-spacing: 2;
 }
 .card-header >img {
@@ -3338,7 +3339,7 @@ p.copyright-text {
 
 .card-detail > p {
   padding: 0.6rem 1.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -3371,9 +3372,10 @@ p.copyright-text {
 }
 
 .card-button {
+  font-size: 1.5rem;
   padding: 0.6rem 3rem ;
-  border: 2px solid #5222d0;
-  background-color: #5222d0;
+  border: 2px solid #b20b24;
+  background-color: #b20b24;
   color: #fff;
   border-radius: 30px;
   cursor: pointer;
@@ -3381,8 +3383,120 @@ p.copyright-text {
 }
 
 .card-button:hover {
-  border: 2px solid #ec615b;
+  border: 2px solid #b20b24;
   background-color: transparent;
-  color: #ec615b;
+  color: #b20b24;
   font-weight: 800;
 }
+
+/*  Package Comaprison Photo Slider /*-----------------------------------------------------------------------------------*/
+.slider{
+  width: 522px;
+  height: 348px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 348px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 522px;
+  height: 348px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 522px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #b20b24;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #b20b24;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 522px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navigation-auto div{
+  border: 2px solid #b20b24;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #b20b24;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #b20b24;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #b20b24;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #b20b24;
+}
+
