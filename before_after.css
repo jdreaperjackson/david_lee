@@ -78,16 +78,16 @@ div.slider-button:before {
     color: #555;
     position: absolute;
     top: 8px;
-    left: 0px;
-    content: "\2B9C";
+    left: 3px;
+    content: "❮";
 }
 
 div.slider-button:after {
     color: #555;
     position: absolute;
     top: 8px;
-    right: 0px;
-    content: "\2B9E";
+    right: 3px;
+    content: "❯";
 }
 
 @media (max-width: 767px) {
