@@ -532,7 +532,8 @@ h2.author-name {
 }
 
 .video-button .button {
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* 3.2 Personal Photographer */
