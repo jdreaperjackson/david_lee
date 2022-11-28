@@ -3282,19 +3282,34 @@ h4.sidebar-widget-title {
   padding: 5px 19px 4px;
 }
 
-.copyrightplus1 {
+.linkedin-icon { 
   position: fixed;
-     bottom: 0;
-     right: 0;
-     padding: 5px 19px 8px;
+  bottom: 0;
+  right: 0;
+  padding: 5px 0px 8px;
+  z-index: 1;
+  margin-right: 19px;
+
 }
 
-.copyrightplus2 {
+.fb-icon {
   position: fixed;
-     bottom: 0;
-     right: 0;
-     padding: 5px 49px 8px;
+  bottom: 0;
+  right: 0;
+  padding: 5px 0px 8px;
+  z-index: 1;
+  margin-right: 49px;
 }
+
+.youtube-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 5px 0px 8px;
+  z-index: 1;
+  margin-right: 79px;
+}
+
 
 p.copyright-text {
   margin: 0;
