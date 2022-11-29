@@ -3331,6 +3331,19 @@ h4.sidebar-widget-title {
   opacity: .6;
 }
 
+.instagram-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 5px 0px 8px;
+  z-index: 1;
+  margin-right: 109px;
+}
+
+.instagram-icon:hover {
+  opacity: .6;
+}
+
 
 p.copyright-text {
   margin: 0;
