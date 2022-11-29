@@ -3357,7 +3357,7 @@ p.copyright-text {
   align-items: center;
   justify-content: center;
   width: 250px;
-  height: 490px;
+  height: 500px;
   background-color: #f9f9f9;
   border-radius: 20px;
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
@@ -3371,8 +3371,14 @@ p.copyright-text {
 }
 
 .card-header {
-  font-size: 1.2rem;
-  margin: 1rem;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.card-price {
+  font-size: 1.5rem;
+  margin: 0rem;
   text-align: center;
 }
 
@@ -3392,7 +3398,7 @@ p.copyright-text {
 }
 
 .card-detail > p {
-  padding: 0.6rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
   border-bottom: 1px solid #d5d5d5;
 }
@@ -3408,12 +3414,6 @@ p.copyright-text {
 /* .card-detail > p:hover {
   background-color: #d5d5d5;
 } */
-
-.card-price {
-  display: flex;
-  align-items: flex-start;
-  margin: 1rem;
-}
 
 .card-price > p {
   font-size: 3rem;
