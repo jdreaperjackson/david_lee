@@ -298,20 +298,15 @@
                             <br>
                         </div>
                         <div class="column column-2 project-img-wrap">
-                            <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
-                            <video controls width="100%" id="video1"></video>
-                            <script>
-                            var video = document.getElementById('video1');
-                            var videoSrc = 'https://stream.mux.com/UtB3qwYRU8uVZ02L77KxVnRsQkvV00qIQv00Nc4dUkNCGI.m3u8';
-                            if (Hls.isSupported()) {
-                            var hls = new Hls();
-                            hls.loadSource(videoSrc);
-                            hls.attachMedia(video);
-                            }
-                            else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                            video.src = videoSrc;
-                            }
-                            </script>
+                            <script src="https://unpkg.com/@mux/mux-player"></script>
+                            <mux-player
+                            stream-type="on-demand"
+                            playback-id="UtB3qwYRU8uVZ02L77KxVnRsQkvV00qIQv00Nc4dUkNCGI"
+                            metadata-video-title="Placeholder (optional)"
+                            metadata-viewer-user-id="Placeholder (optional)"
+                            primary-color="#FFFFFF"
+                            secondary-color="#000000">
+                            </mux-player>
                         </div>
                     </div>
                 </div>
@@ -326,20 +321,15 @@
                             </p>
                         </div>
                         <div class="column column-2 project-img-wrap">
-                            <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script> -->
-                            <video controls width="100%" id="video2"></video>
-                            <script>
-                            var video = document.getElementById('video2');
-                            var videoSrc = 'https://stream.mux.com/RXzEmzItw01sue8hU39cAXXDJslkcWBjBuQS9FUEW6Hw.m3u8';
-                            if (Hls.isSupported()) {
-                            var hls = new Hls();
-                            hls.loadSource(videoSrc);
-                            hls.attachMedia(video);
-                            }
-                            else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                            video.src = videoSrc;
-                            }
-                            </script>
+                            <!-- <script src="https://unpkg.com/@mux/mux-player"></script> -->
+                            <mux-player
+                            stream-type="on-demand"
+                            playback-id="RXzEmzItw01sue8hU39cAXXDJslkcWBjBuQS9FUEW6Hw"
+                            metadata-video-title="Placeholder (optional)"
+                            metadata-viewer-user-id="Placeholder (optional)"
+                            primary-color="#FFFFFF"
+                            secondary-color="#000000">
+                            </mux-player> 
                         </div>
                     </div>
                 </div>
@@ -354,20 +344,15 @@
                             </p>
                         </div>
                         <div class="column column-2 project-img-wrap">
-                            <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script> -->
-                            <video controls width="100%" id="video3"></video>
-                            <script>
-                            var video = document.getElementById('video3');
-                            var videoSrc = 'https://stream.mux.com/5nYqVhoZCid1tLAJPe702GbgmAWnkTerCNFPD00coN5XI.m3u8';
-                            if (Hls.isSupported()) {
-                            var hls = new Hls();
-                            hls.loadSource(videoSrc);
-                            hls.attachMedia(video);
-                            }
-                            else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                            video.src = videoSrc;
-                            }
-                            </script>
+                            <!-- <script src="https://unpkg.com/@mux/mux-player"></script> -->
+                            <mux-player
+                            stream-type="on-demand"
+                            playback-id="5nYqVhoZCid1tLAJPe702GbgmAWnkTerCNFPD00coN5XI"
+                            metadata-video-title="Placeholder (optional)"
+                            metadata-viewer-user-id="Placeholder (optional)"
+                            primary-color="#FFFFFF"
+                            secondary-color="#000000">
+                            </mux-player>
                         </div>
                     </div>
                 </div>
