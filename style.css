@@ -3629,10 +3629,6 @@ p.copyright-text {
 
 
 @media only screen and (max-width: 600px) {  
-  mobilevideo {
-    height: 100%;
-  }   
-
   .mobile-video {
     height: 100%;
     width: auto !important;
@@ -3664,12 +3660,6 @@ p.copyright-text {
   width: 100%;
   height: auto;
 }
-
-@media only screen and (min-width: 992px) {  
-  dektopvideo {
-    width: 100%;
-  }   
- }     
 
  @media only screen and (max-width: 1200px) {  
   .mobile-video {
