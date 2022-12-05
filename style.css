@@ -498,6 +498,7 @@ li.storemenu-item a:hover {
   width: 75%;
   top: 54.5%;
   left: 50%;
+  
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -3627,10 +3628,41 @@ p.copyright-text {
 /* MEDIA HOMEPAGE */
 
 
-@media only screen and (min-width: 600px) {  
+@media only screen and (max-width: 600px) {  
   mobilevideo {
     height: 100%;
   }   
+
+  .mobile-video {
+    height: 100%;
+    width: auto !important;
+    z-index: 1;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .linkedin-icon { 
+    display: none;
+  
+  }
+
+  .instagram-icon {
+    display: none;
+  }
+  .fb-icon {
+    display: none;
+  }
+  
+  .youtube-icon {
+    display: none;
+  }
+}
+
+.mobile-video {
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 992px) {  
@@ -3638,3 +3670,10 @@ p.copyright-text {
     width: 100%;
   }   
  }     
+
+ @media only screen and (max-width: 1200px) {  
+  .mobile-video {
+    height: 100% !important;
+    width: auto !important;
+  }   
+ }    
