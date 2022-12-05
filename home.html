@@ -121,8 +121,18 @@
                     <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
                     <!-- Or if you want the latest version from the main branch -->
                     <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
-                    <video loop autoplay muted poster="img/bg_poster.jpg" width=100% id="video"></video>
+                    <video class="mobile-video" loop autoplay muted poster="img/bg_poster.jpg" id="video"></video>
                     <script>
+
+                        // windows.onresize = function() {
+                        //     let windowWidth = window.innerWidth;
+
+                        //     if (windowWidth <= 640) {
+                        //         let videoContent = document.getElementById('videoContent');
+                        //         let tempHeight = videoContent.offsetHeight;
+                        //     }
+
+                        // }
                     var video = document.getElementById('video');
                     var videoSrc = 'https://stream.mux.com/ByFrSy7zdob47rynkHz02ZspMYXY8ZAIV02ezmoyCWQgk.m3u8';
                     if (Hls.isSupported()) {
@@ -134,11 +144,12 @@
                     video.src = videoSrc;
                     }
                     </script>
-                    <div class="video-overlay"></div>
-                    <div class="video-content">
+                    <div class="video-overlay">
+                        </div>
+                    <div class="video-content" id="videoContent">
                         <div class="container" data-aos="fade-up">
                             <div class="signature-wrap">
-                                <img src="img/logo_b.svg">
+                                <img src="img/logo_b.svg" alt="">
                                 <br><br>
                                 <h2 class="author-name">Houston's premier drone & photography service</h2>
                             </div>
