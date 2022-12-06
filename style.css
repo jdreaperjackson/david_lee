@@ -536,6 +536,16 @@ h2.author-name {
   margin-top: -14px;
 }
 
+h3.price-note {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #ff0000;
+  letter-spacing: 1px;
+}
+
 .video-button {
   display: flex;
   justify-content: center;
