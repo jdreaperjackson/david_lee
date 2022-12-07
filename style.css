@@ -541,8 +541,6 @@ h3.price-note {
   text-align: center;
   font-weight: 500;
   line-height: 40px;
-  text-transform: capitalize;
-  /* color: #ff0000; */
   letter-spacing: 1px;
 }
 
@@ -620,6 +618,12 @@ h5.the-title {
 .projects-block {
   background: #f5f5f5;
   padding: 40px 0 80px 0;
+  margin-bottom: -35px;
+}
+
+.projects-block-pricing{
+  background: #f5f5f5;
+  padding: 21px 0 0px 0;
   margin-bottom: -35px;
 }
 
