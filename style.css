@@ -542,7 +542,7 @@ h3.price-note {
   font-weight: 500;
   line-height: 40px;
   text-transform: capitalize;
-  color: #ff0000;
+  /* color: #ff0000; */
   letter-spacing: 1px;
 }
 
